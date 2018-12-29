@@ -23,12 +23,12 @@ public class BaseTest
 	private static final Logger log = LogFactory.getLog(BaseTest.class);
 
 	@Test
-	void initializeTest()
+	public void initializeTest()
 	{
 		log.config("Completely Initialization Test");
 	}
 
-	void reset()
+	public void reset()
 	{
 		tearDown();
 		tearDownAll();
@@ -37,7 +37,7 @@ public class BaseTest
 	}
 
 	@AfterEach
-	void tearDown()
+	public void tearDown()
 	{
 		log.config("Destroying Everything...");
 		Set<ITestInstanceDestroyService> resetServices = GuiceContext.instance()
@@ -49,22 +49,24 @@ public class BaseTest
 	}
 
 	@AfterAll
-	static void tearDownAll()
+	public static void tearDownAll()
 	{
 
 	}
 
 	@BeforeAll
-	static void initAll()
+	public static void initAll()
 	{
 		LogFactory.configureConsoleColourOutput(Level.FINE);
 		LogColourFormatter.setRenderBlack(false);
+		System.setErr(System.out);
 		log.config("Starting Up Instance");
 	}
 
 	@BeforeEach
-	void init()
+	public void init()
 	{
+		soutDivider();
 		log.config("Initializing Everything");
 		Set<ITestInstanceInitializerService> resetServices = GuiceContext.instance()
 		                                                                 .getLoader(ITestInstanceInitializerService.class,
