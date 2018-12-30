@@ -19,6 +19,7 @@ import static org.junit.jupiter.api.TestInstance.Lifecycle.*;
  */
 @TestInstance(PER_CLASS)
 public class BaseTest
+		implements IBaseTest
 {
 	private static final Logger log = LogFactory.getLog(BaseTest.class);
 
@@ -28,14 +29,16 @@ public class BaseTest
 		log.config("Completely Initialization Test");
 	}
 
+	@Override
 	public void reset()
 	{
 		tearDown();
-		tearDownAll();
-		initAll();
+		IBaseTest.tearDownAll();
+		IBaseTest.initAll();
 		init();
 	}
 
+	@Override
 	@AfterEach
 	public void tearDown()
 	{
@@ -48,21 +51,7 @@ public class BaseTest
 		}
 	}
 
-	@AfterAll
-	public static void tearDownAll()
-	{
-
-	}
-
-	@BeforeAll
-	public static void initAll()
-	{
-		LogFactory.configureConsoleColourOutput(Level.FINE);
-		LogColourFormatter.setRenderBlack(false);
-		System.setErr(System.out);
-		log.config("Starting Up Instance");
-	}
-
+	@Override
 	@BeforeEach
 	public void init()
 	{
