@@ -145,6 +145,12 @@
             <artifactId>selenium-jupiter</artifactId>
             <version>${selenium.jupiter.version}</version>
             <scope>compile</scope>
+            <exclusions>
+                <exclusion>
+                    <artifactId>docker-client</artifactId>
+                    <groupId>com.spotify</groupId>
+                </exclusion>
+            </exclusions>
             <type>jar</type>
         </dependency>
         <dependency>
