@@ -61,22 +61,11 @@
         </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.jpms.jackson.module</groupId>
+            <groupId>com.fasterxml.jackson.module</groupId>
             <artifactId>jackson-module-guice</artifactId>
             <type>jar</type>
         </dependency>
 
-        <dependency>
-            <groupId>com.jwebmp.jpms.jackson.datatype</groupId>
-            <artifactId>jackson-datatype-jdk8</artifactId>
-            <type>jar</type>
-        </dependency>
-
-        <dependency>
-            <groupId>com.jwebmp.jpms.jackson.datatype</groupId>
-            <artifactId>jackson-datatype-datetime</artifactId>
-            <type>jar</type>
-        </dependency>
 
         <!-- Test Dependencies -->
         <dependency>
