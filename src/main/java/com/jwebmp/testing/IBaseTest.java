@@ -1,7 +1,7 @@
 package com.jwebmp.testing;
 
-import com.jwebmp.logger.LogFactory;
-import com.jwebmp.logger.logging.LogColourFormatter;
+import com.guicedee.logger.LogFactory;
+import com.guicedee.logger.logging.LogColourFormatter;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;

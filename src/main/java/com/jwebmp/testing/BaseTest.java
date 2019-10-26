@@ -1,8 +1,8 @@
 package com.jwebmp.testing;
 
-import com.jwebmp.guicedinjection.GuiceContext;
-import com.jwebmp.logger.LogFactory;
-import com.jwebmp.logger.logging.LogColourFormatter;
+import com.guicedee.guicedinjection.GuiceContext;
+import com.guicedee.logger.LogFactory;
+import com.guicedee.logger.logging.LogColourFormatter;
 import com.jwebmp.testing.services.ITestInstanceDestroyService;
 import com.jwebmp.testing.services.ITestInstanceInitializerService;
 import org.junit.jupiter.api.*;
