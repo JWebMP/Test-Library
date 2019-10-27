@@ -22,49 +22,49 @@
             <groupId>com.guicedee</groupId>
             <artifactId>guiced-injection</artifactId>
             <type>jar</type>
-            </dependency>
+        </dependency>
 
         <dependency>
             <groupId>com.guicedee</groupId>
             <artifactId>guiced-log-master</artifactId>
             <type>jar</type>
-            </dependency>
+        </dependency>
 
         <dependency>
-             <groupId>com.guicedee.services</groupId>
+            <groupId>com.guicedee.services</groupId>
             <artifactId>uadetector-core</artifactId>
             <type>jar</type>
-            </dependency>
+        </dependency>
 
         <dependency>
-             <groupId>com.guicedee.services</groupId>
+            <groupId>com.guicedee.services</groupId>
             <artifactId>uadetector-resources</artifactId>
             <type>jar</type>
-            </dependency>
+        </dependency>
 
         <dependency>
-             <groupId>com.guicedee.services</groupId>
+            <groupId>com.guicedee.services</groupId>
             <artifactId>commons-lang3</artifactId>
             <type>jar</type>
-            </dependency>
+        </dependency>
 
         <dependency>
-             <groupId>com.guicedee.services</groupId>
+            <groupId>com.guicedee.services</groupId>
             <artifactId>commons-text</artifactId>
             <type>jar</type>
-            </dependency>
+        </dependency>
 
         <dependency>
-             <groupId>com.guicedee.services</groupId>
+            <groupId>com.guicedee.services</groupId>
             <artifactId>commons-io</artifactId>
             <type>jar</type>
-            </dependency>
+        </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.module</groupId>
             <artifactId>jackson-module-guice</artifactId>
             <type>jar</type>
-            </dependency>
+        </dependency>
 
 
         <!-- Test Dependencies -->
@@ -73,28 +73,32 @@
             <artifactId>junit-jupiter-api</artifactId>
             <type>jar</type>
             <scope>compile</scope>
-            </dependency>
+            <version>${junit.jupiter.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-all</artifactId>
             <type>jar</type>
             <scope>compile</scope>
-            </dependency>
+            <version>${hamcrest.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <type>jar</type>
             <scope>compile</scope>
-            </dependency>
+            <version>${assertj.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
             <type>jar</type>
             <scope>compile</scope>
-            </dependency>
+            <version>${mockito.version}</version>
+        </dependency>
 
         <!-- Integration Testing -->
         <dependency>
@@ -103,13 +107,14 @@
             <version>${selenium.version}</version>
             <scope>compile</scope>
             <type>jar</type>
-            </dependency>
+        </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-api</artifactId>
             <version>${selenium.version}</version>
-            <scope>compile</scope><type>jar</type>
-            </dependency>
+            <scope>compile</scope>
+            <type>jar</type>
+        </dependency>
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>selenium-jupiter</artifactId>
@@ -122,35 +127,35 @@
                 </exclusion>
             </exclusions>
             <type>jar</type>
-            </dependency>
+        </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
             <version>${selenium.version}</version>
             <scope>compile</scope>
             <type>jar</type>
-            </dependency>
+        </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-firefox-driver</artifactId>
             <version>${selenium.version}</version>
             <scope>compile</scope>
             <type>jar</type>
-            </dependency>
+        </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-remote-driver</artifactId>
             <version>${selenium.version}</version>
             <scope>compile</scope>
             <type>jar</type>
-            </dependency>
+        </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-support</artifactId>
             <version>${selenium.version}</version>
             <scope>compile</scope>
             <type>jar</type>
-            </dependency>
+        </dependency>
 
     </dependencies>
 
