@@ -17,6 +17,7 @@ import static org.junit.jupiter.api.TestInstance.Lifecycle.*;
 /**
  * Base testing class
  */
+@SuppressWarnings({"unchecked", "rawtypes"})
 @TestInstance(PER_CLASS)
 public class BaseTest
 		implements IBaseTest
