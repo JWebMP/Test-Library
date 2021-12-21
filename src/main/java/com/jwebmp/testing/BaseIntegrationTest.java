@@ -1,15 +1,16 @@
 package com.jwebmp.testing;
 
-import io.github.bonigarcia.seljup.SeleniumExtension;
+
+import io.github.bonigarcia.seljup.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
 
-@ExtendWith({SeleniumExtension.class})
+
+@ExtendWith({SeleniumJupiter.class})
 public class BaseIntegrationTest
 {
 
@@ -23,13 +24,6 @@ public class BaseIntegrationTest
 	@DisplayName("Firefox Driver Test")
 	public void testWithFirefox(FirefoxDriver firefoxDriver) {
 		// Use Firefox in this test
-	}
-
-
-	@Test
-	@DisplayName("Phantom JS Driver Test")
-	public void testWithPhantomJS(PhantomJSDriver phantomJSDriver) {
-		// Use Chrome in this test
 	}
 
 	@Test
