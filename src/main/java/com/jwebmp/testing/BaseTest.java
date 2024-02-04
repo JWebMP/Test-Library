@@ -1,10 +1,10 @@
 package com.jwebmp.testing;
 
 import com.guicedee.guicedinjection.GuiceContext;
-import com.guicedee.logger.LogFactory;
-import com.guicedee.logger.logging.LogColourFormatter;
+
 import com.jwebmp.testing.services.ITestInstanceDestroyService;
 import com.jwebmp.testing.services.ITestInstanceInitializerService;
+import lombok.extern.java.Log;
 import org.junit.jupiter.api.*;
 
 import java.util.ServiceLoader;
@@ -19,10 +19,10 @@ import static org.junit.jupiter.api.TestInstance.Lifecycle.*;
  */
 @SuppressWarnings({"unchecked", "rawtypes"})
 @TestInstance(PER_CLASS)
+@Log
 public class BaseTest
 		implements IBaseTest
 {
-	private static final Logger log = LogFactory.getLog(BaseTest.class);
 
 	@Test
 	public void initializeTest()

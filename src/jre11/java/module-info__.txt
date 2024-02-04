@@ -11,7 +11,7 @@ module com.jwebmp.testing {
 
 	requires com.jwebmp.core;
 	requires org.junit.jupiter.api;
-	requires com.guicedee.logmaster;
+
 	requires com.guicedee.guicedinjection;
 
 	requires java.logging;
