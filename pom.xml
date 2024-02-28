@@ -17,6 +17,13 @@
     <description>Provides all the base test items
     </description>
 
+    <properties>
+        <project.scm.nameUrl>/JWebMP/Test-Library</project.scm.nameUrl>
+
+        <ignore.moditect>true</ignore.moditect>
+        <flatten.pom>false</flatten.pom>
+    </properties>
+
     <dependencies>
 
         <dependency>
@@ -98,11 +105,6 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
-
-    <properties>
-        <ignore.moditect>true</ignore.moditect>
-        <flatten.pom>false</flatten.pom>
-    </properties>
 
     <dependencyManagement>
         <dependencies>
