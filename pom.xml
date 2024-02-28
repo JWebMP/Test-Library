@@ -16,7 +16,6 @@
     <name>JWebMP Testing Classes</name>
     <description>Provides all the base test items
     </description>
-    <url>https://github.com/GedMarc/JWebMP-Vue</url>
 
     <dependencies>
 
@@ -100,11 +99,6 @@
         </dependency>
     </dependencies>
 
-
-    <scm>
-        <url>https://github.com/GedMarc/JWebMP-Vue.git</url>
-    </scm>
-
     <properties>
         <ignore.moditect>true</ignore.moditect>
         <flatten.pom>false</flatten.pom>
@@ -119,15 +113,6 @@
                 <scope>import</scope>
                 <version>${guicedee.version}</version>
             </dependency>
-
-            <dependency>
-                <groupId>com.jwebmp</groupId>
-                <artifactId>jwebmp-bom</artifactId>
-                <type>pom</type>
-                <scope>import</scope>
-                <version>${guicedee.version}</version>
-            </dependency>
-
         </dependencies>
     </dependencyManagement>
 

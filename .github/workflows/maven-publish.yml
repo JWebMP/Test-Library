@@ -15,7 +15,7 @@ permissions:
   packages: write
 jobs:
   TestLibrary:
-    uses: GuicedEE/Workflows/.github/workflows/bom.yml@master
+    uses: GuicedEE/Workflows/.github/workflows/projects.yml@master
     with:
       baseDir: ''
       name: 'Test Library'
