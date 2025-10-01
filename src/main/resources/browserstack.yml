@@ -1,5 +1,5 @@
-userName: marcmagon1
-accessKey: P7pnVbL7JBJ732Spjr39
+userName:
+accessKey:
 framework: junit5
 platforms:
   - os: Windows
