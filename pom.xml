@@ -66,17 +66,17 @@
         <!-- Integration Testing -->
 
         <!-- BrowserStack Local bindings -->
-        <dependency>
+       <!-- <dependency>
             <groupId>com.browserstack</groupId>
             <artifactId>browserstack-local-java</artifactId>
-            <version>1.1.7</version>
+            <version>LATEST</version>
         </dependency>
 
         <dependency>
             <groupId>com.browserstack</groupId>
             <artifactId>browserstack-java-sdk</artifactId>
             <version>LATEST</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>com.guicedee</groupId>
             <artifactId>guiced-vertx-web</artifactId>
@@ -89,7 +89,7 @@
         <dependencies>
             <dependency>
                 <groupId>com.guicedee</groupId>
-                <artifactId>standalone-bom</artifactId>
+                <artifactId>guicedee-bom</artifactId>
                 <type>pom</type>
                 <scope>import</scope>
                 <version>${guicedee.version}</version>
