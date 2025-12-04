@@ -1,7 +1,7 @@
 package com.jwebmp.testing;
 
 import com.guicedee.guicedinjection.GuiceContext;
-import com.jwebmp.testing.browserstack.BrowserStackLocalExtension;
+//import com.jwebmp.testing.browserstack.BrowserStackLocalExtension;
 import io.vertx.core.http.HttpServer;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
@@ -25,7 +25,7 @@ import java.net.http.HttpResponse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@ExtendWith(BrowserStackLocalExtension.class)
+//@ExtendWith(BrowserStackLocalExtension.class)
 public abstract class BaseIntegrationTest implements com.guicedee.vertx.web.spi.VertxHttpServerConfigurator
 {
     @BeforeAll

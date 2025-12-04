@@ -1,3 +1,4 @@
+/*
 package com.jwebmp.testing.browserstack;
 
 import com.browserstack.local.Local;
@@ -12,6 +13,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+*/
 /**
  * JUnit 5 extension that manages the lifecycle of BrowserStack Local.
  *
@@ -28,7 +30,8 @@ import java.util.stream.Collectors;
  *  - browserstack.force / BROWSERSTACK_FORCE => "true" to force kill others
  *  - browserstack.onlyAutomate / BROWSERSTACK_ONLY_AUTOMATE => "true" only automate
  *  - proxyHost/Port/User/Pass via browserstack.proxyHost, etc (or env)
- */
+ *//*
+
 public class BrowserStackLocalExtension implements BeforeEachCallback, AfterEachCallback, ExecutionCondition {
 
     private static void log(String msg) {
@@ -112,12 +115,14 @@ public class BrowserStackLocalExtension implements BeforeEachCallback, AfterEach
         map.put(k, v);
     }
 
-    /**
+    */
+/**
      * Resolves the BrowserStack access key using precedence:
      * 1) System property browserstack.accessKey
      * 2) Environment variable BROWSERSTACK_ACCESS_KEY
      * 3) browserstack.yml on classpath (key: accessKey)
-     */
+     *//*
+
     private static String resolveAccessKey() {
         String v = get("browserstack.accessKey", "BROWSERSTACK_ACCESS_KEY");
         if (v != null && !v.isBlank()) {
@@ -162,3 +167,4 @@ public class BrowserStackLocalExtension implements BeforeEachCallback, AfterEach
         }
     }
 }
+*/
